@@ -3,20 +3,20 @@
 .all {
   width: 90%;
   margin: 100px auto;
-  .title{
+  .title {
     text-align: center;
-    font-family: 'Genos';
+    font-family: "Genos";
     font-size: 60px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .filter{
+    .filter {
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 30px;
-      label{
+      label {
         font-size: 20px;
       }
     }
@@ -24,35 +24,43 @@
   .avaible {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    .car{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px gray;
-        transition: 0.4s;
-        &:hover{
-            transform: scale(1.1);
+    .car {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px gray;
+      transition: 0.4s;
+      &:hover {
+        transform: scale(1.1);
+      }
+      img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .txt {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: #000;
+        width: 100%;
+        color: white;
+        font-family: "Genos";
+        padding: 10px;
+        .top {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
         }
-        img{
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-        .txt{
-            border-bottom-right-radius: 10px;
-            border-bottom-left-radius: 10px;
-            background: #000;
-            width: 100%;
-            color: white;
-            font-family: 'Genos';
-            padding: 10px;
-            .top{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-            }
-        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .all {
+    .avaible{
+      grid-template-columns: 1fr ;
     }
   }
 }

@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import Footer from "./components/footer";
 import AvaibleCars from "./pages/avaible";
 import Deal from "./pages/deal";
+import Order from "./pages/order";
 // i love kanye west
 export default function App() {
   return <>
@@ -13,6 +14,7 @@ export default function App() {
     <Route path="/" element={<Home />} />
     <Route path="/avaible-cars" element={<AvaibleCars />} />
     <Route path="/deal/:id" element={<Deal />} />
+    <Route path="/order" element={<Order />} />
   </Routes>
   <Footer />
 

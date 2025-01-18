@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Geostar+Fill&family=Stalinist+One&display=swap");
+
+
+.container-order{
+
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    .title{
+        text-align: center;
+        font-family: 'Genos';
+        font-size: 50px;
+    }
+    .order{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .car{
+            width: 50%;
+            background: #000;
+            color: white;
+            border-radius: 10px;
+            font-family: 'Geostar Fill';
+            font-size: 30px;
+            text-align: center;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-family: 'Genos';
+            font-size: 30px;
+            width: 50%;
+        }
+    }
+
+
+}
+
+@media(max-width:768px){
+    .container-order{
+        .order{
+            flex-direction: column;
+            align-items: center;
+            .car{
+                width: 100%;
+            }
+        }
+    }
+}

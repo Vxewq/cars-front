@@ -16,7 +16,6 @@ export default function Deal() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
 
-
   const send = () => {
     back
       .post("/orders", {
@@ -25,17 +24,9 @@ export default function Deal() {
         phone: phone,
         carId: car._id,
       })
-      .then((res) => alert(res.statusText));
-
-
-    localStorage.setItem("order", {
-      name: name,
-      email: email,
-      phone: phone,
-      carId: car._id,
-    });
-
-    console.log(localStorage.getItem("order"));
+      .then((res) => {
+        localStorage.setItem("order", res.data._id);
+      });
   };
 
   return (
