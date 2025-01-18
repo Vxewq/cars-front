@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Geostar+Fill&family=Stalinist+One&display=swap");
+
+.showcase {
+  //   width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  .carusel {
+    width: 100%;
+
+    .cardiv {
+      width: 100%;
+      height: 80vh;
+      display: flex !important;
+      align-items: center;
+      padding: 10px;
+      padding-left: 20px;
+
+      color: white;
+      flex-direction: row;
+      
+      .txt {
+        width: 90%;
+        margin: 0 auto;
+        h1 {
+          font-family: "Genos";
+          font-size: 50px;
+          span {
+            font-family: "Stalinist One";
+            color: rgba(255, 255, 255, 0.833);
+          }
+        }
+        p {
+          width: 40%;
+          color: rgb(194, 194, 194);
+        }
+      }
+    }
+    .audi {
+      background: linear-gradient(90deg, #00000090, rgba(255, 255, 255, 0.08)),
+        url("/public/showcase.jpeg");
+      background-position: center;
+      background-size: cover;
+    }
+    .jeep {
+      background: linear-gradient(90deg, #00000090, rgba(255, 255, 255, 0.08)),
+        url("/public/showcase2.png");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.avaible {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  .title {
+    font-size: 60px;
+    font-family: "Genos";
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    .car {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #000;
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0px 4px 14px 0px rgba(34, 60, 80, 0.2);
+      img{
+        width: 100%;
+
+      }
+
+      &:hover{
+        .txt{
+            transform: scale(1.1);
+            justify-content: center;
+            gap: 20px;
+        }
+      }
+
+      .txt {
+        width: 100%;
+        justify-self: end;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        transition: 0.4s;
+        align-items: flex-end;
+        h1 {
+          font-family: "Stalinist One";
+        }
+      }
+    }
+  }
+  .second{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    img{
+        border-radius: 10px;
+
+    }
+  }
+}
+
+.about{
+    width: 90%;
+    margin: 0 auto;
+
+    .title{
+        font-family: 'Genos';
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .info{
+        text-align: center;
+        font-family: 'Genos';
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    .carusel {
+      .cardiv {
+        .txt {
+          align-self: flex-end;
+          margin-bottom: 100px;
+          width: 100%;
+          text-align: center;
+          p {
+            width: 100%;
+          }
+        }
+      }
+      .audi {
+        background: linear-gradient(0deg, #000000, rgba(255, 255, 255, 0.08)),
+          url("/public/showcase.jpeg");
+        background-position: center;
+        background-size: cover;
+      }
+      .jeep {
+        background: linear-gradient(0deg, #000000, rgba(255, 255, 255, 0.08)),
+          url("/public/showcase2.png");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}

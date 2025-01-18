@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Geostar+Fill&family=Stalinist+One&display=swap");
+
+
+
+.footer{
+    margin-top: 50px;
+    background: #000;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 10px;
+    img{
+        transition: 0.4s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
